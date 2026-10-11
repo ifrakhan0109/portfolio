@@ -3,7 +3,7 @@
 A modern, fully responsive personal portfolio website built as part of the MTech Solutions Frontend Development Internship (Batch 01, Task 01).
 
 ## 🌐 Live Demo
-[Add your Netlify/Vercel link here]
+https://ifrakhan0109.github.io/portfolio/
 
 ## 👩‍💻 About
 I'm Ifra Khan, a frontend developer from Karachi, Pakistan. This portfolio showcases my skills, projects, and services as a frontend developer.
