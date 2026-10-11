@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%" height="100%">
+  <defs>
+    <!-- Gradient Spectrum -->
+    <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <!-- Glass Fill -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
+
+    .card { fill: url(#glass); stroke: #312e81; stroke-width: 2; rx: 20px; }
+    .gradient-pill { fill: url(#spectrum); rx: 12px; }
+    .pill-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; fill: #ffffff; }
+    .main-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      fill: url(#spectrum);
+      letter-spacing: -2px;
+    }
+  </style>
+
+  <!-- Base Card -->
+  <rect width="800" height="280" class="card"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Tag Pill -->
+    <rect x="0" y="0" width="100" height="36" class="gradient-pill"/>
+    <text x="50" y="25" text-anchor="middle" class="pill-text">PORTFOLIO</text>
+
+    <!-- Main Title Text -->
+    <text x="0" y="115" class="main-title">ifra.dev</text>
+  </g>
+</svg>

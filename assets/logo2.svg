@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Indigo to Purple Gradient -->
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
+
+    .bg-dark { fill: #0d1117; rx: 24px; }
+    .shield { fill: url(#shieldGradient); }
+    .shield-inner { fill: #0d1117; }
+    .logo-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 76px;
+      fill: #ffffff;
+      letter-spacing: -1px;
+    }
+    .dev-color { fill: url(#shieldGradient); }
+  </style>
+
+  <rect width="850" height="280" class="bg-dark"/>
+
+  <g transform="translate(90, 65)">
+    <!-- Hexagon Emblem Mark -->
+    <polygon points="75,0 150,43 150,129 75,172 0,129 0,43" class="shield"/>
+    <polygon points="75,12 138,48 138,124 75,160 12,124 12,48" class="shield-inner"/>
+    
+    <!-- Stylized ID Monogram inside Shield -->
+    <path d="M 52 50 L 68 50 L 68 120 L 52 120 Z" fill="url(#shieldGradient)"/>
+    <path d="M 80 50 L 98 50 C 118 50 128 62 128 85 C 128 108 118 120 98 120 L 80 120 Z M 96 66 L 96 104 C 108 104 112 98 112 85 C 112 72 108 66 96 66 Z" fill="url(#shieldGradient)"/>
+
+    <!-- Text -->
+    <text x="190" y="112" class="logo-text">
+      ifra<tspan class="dev-color">.dev</tspan>
+    </text>
+  </g>
+</svg>
